@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--creating first bean-->
+<bean id="Student" class="com.Demo.Student" >
+    <property name="studentId"  value="01"/>
+    <property name="studentName" value="Meera"/>
+    <property name="studentCity" value="Pune"/>
+</bean>
+  <!--   creating second bean  -->
+    <bean id="Student1" class="com.Demo.Student">
+        <property name="studentId"  value="02"/>
+        <property name="studentName" value="Mehar"/>
+        <property name="studentCity" value="Pune,Warje"/>
+    </bean>
+
+<!--
+    <bean name="Emp1"  class="com.springcore.collection">
+        <property  name="name" value="meharbhosale"/>
+        <property name="phones">
+            <list>
+                <value>123445643</value>
+                <value>09272106</value>
+            </list>
+        </property>
+        <property name="address">
+            <set>
+                <value>pune</value>
+                <value>mumbai</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="java"  value="2.1months"/>
+                <entry key="c++"  value="2.0months"/>
+            </map>
+        </property>
+    </bean>-->
+</beans>
+
+        <!-- xmlns:p="http://www.springframework.org/schema/p"-->
